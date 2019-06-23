@@ -68,11 +68,12 @@ library instances-for-polysemy
   import:          shared
   hs-source-dirs:  instances
   ghc-options:     -fplugin=Polysemy.Plugin
+  default-extensions: ScopedTypeVariables
   exposed-modules: Poly.Stateful
                  , Poly.StatefulExcept
                  , Poly.HTTP
-  build-depends:   polysemy ^>= 0.2.1
-                 , polysemy-plugin ^>= 0.2.0.0
+  build-depends:   polysemy ^>= 0.4.0.0
+                 , polysemy-plugin ^>= 0.2.1.0
 
 benchmark effects-benchmarks
   import:         shared
